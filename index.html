@@ -1159,8 +1159,8 @@
             });
         });
 
-        // ======= FORMULAIRE AVEC GOOGLE APPS SCRIPT =======
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyawhASQcopyBMujY-oJ0Q7zOQIUIHlesyb6xHvT9KNA4BmhVkXGh3IpPo1x9tWHPh5/exec';
+        // ========== FORMULAIRE CONNECTÉ À GOOGLE DRIVE ==========
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwAz4wIO9zf5KPM0etZ74Ih_pdkzWKXGuSoGNNyShg3LOlc3ojyLFo9xlilF4BCR5PP/exec';
 
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1177,7 +1177,6 @@
                 message: document.getElementById('message').value
             };
 
-            // Envoi vers Google Apps Script
             fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
